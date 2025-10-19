@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <title>For You</title>
+        <h1>Hai Cantik!</h1>
+        <audio>
+            <source src="one in a million.mp3">
+        </audio>
+        <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif"/>
+        <h1>Maukah kamu balikan denganku?</h1>
+        <button id="btn_mau" onclick="alert('I LOVE YOU CANTIK🧚🏻')">Mau</button>
+        <button id="btn_gamau" onclick="gamau(this)" style="position: absolute;">Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById("btn_mau");
+            var i = Math.floor(Math.random() * 300) + 1;
+            var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+            id.style.left = i + "px";
+            id.style.top = j + "px";
+        }
+    </script>
+</html>
